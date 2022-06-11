@@ -5,13 +5,12 @@ using UnityEngine;
 public class TimeChangerScript : MonoBehaviour
 {
     // 노트 속도 변수
-    [SerializeField]
     float noteSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        noteSpeed = BMSLoader.GetNoteSpeed();
     }
 
     // Update is called once per frame

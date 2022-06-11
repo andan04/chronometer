@@ -14,6 +14,8 @@ public class BMSLoader : MonoBehaviour
     const int down = 14;
     const int left = 16;
 
+    static int noteSpeed = 6;
+
     // bms에서 노트 짤 때 썼던 마디별 격자 개수임, 일단 16비트 기준으로 해둠
     static public int barCount = 16;
 
@@ -39,6 +41,14 @@ public class BMSLoader : MonoBehaviour
     static int barNum;
     static int noteNum;
 
+    static public void SetNoteSpeed(int speed)
+    {
+        noteSpeed = speed;
+    }
+    static public int GetNoteSpeed()
+    {
+        return noteSpeed;
+    }
     static public void SetBarCount(int count)
     {
         barCount = count;

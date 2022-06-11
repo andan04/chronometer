@@ -91,9 +91,11 @@ public class NoteGenerator : MonoBehaviour
             {
                 if (timeChangerNote[bar] == '1')
                 {
-                    print("aaa");
                     Instantiate(timeChanger, new Vector3(0, 0, 0), Quaternion.identity);
-                    print("bbb");
+                }
+                else if (timeChangerNote[bar] == '1')
+                {
+                    Instantiate(timeChanger, new Vector3(0, 0, 0), Quaternion.identity);
                 }
             }
             catch
