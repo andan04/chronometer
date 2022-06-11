@@ -5,22 +5,23 @@ using UnityEngine;
 
 public class BMSLoader : MonoBehaviour
 {
-    // 11 : 회전 노트, 회전 방향은 노트 출력할 때 정하는 걸로
-    // 12, 13, 14, 16 : 위, 오른쪽, 아래, 왼쪽
+    // 16 : 회전 노트, 회전 방향은 노트 출력할 때 정하는 걸로
+    // 11, 12, 13, 14 : 위, 오른쪽, 아래, 왼쪽
     // 시간 바꾸는 노트 리스트, 위, 오른쪽, 아래, 왼쪽 노트 리스트 변수임
-    const int timeChanger = 11;
-    const int up = 12;
-    const int right = 13;
-    const int down = 14;
-    const int left = 16;
+    const int timeChanger = 16;
+    const int up = 11;
+    const int right = 12;
+    const int down = 13;
+    const int left = 14;
 
-    static int noteSpeed = 6;
+    static int noteSpeed = 12;
 
     // bms에서 노트 짤 때 썼던 마디별 격자 개수임, 일단 16비트 기준으로 해둠
     static public int barCount = 16;
 
     // [00000000100010001010] 이런식으로 각 리스트 값이 있을거고 0일 때는 노트가 없는거고 1일 때 노트가 있는거임
     // 위치별 노트 담은 리스트임, 큐로 바꿀 수 있으면 좋을 듯 리스트라서 좀 느릴거 같음
+    // up -> 1번 레인, right -> 2번 레인, down -> 3번 레인, left -> 4번 레인
     static List<char> timeChangerNote = new List<char> { };
     static List<char> upNote = new List<char> { };
     static List<char> rightNote = new List<char> { };

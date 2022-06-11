@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2477118903550856891}
   - component: {fileID: 2477118903550856890}
-  - component: {fileID: 8611382220518015948}
+  - component: {fileID: 5547267518955597615}
   m_Layer: 0
   m_Name: ChangerNight
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2477118903550856869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 0.4, z: 1}
+  m_LocalScale: {x: 5, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8611382220518015948
+--- !u!114 &5547267518955597615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,6 +92,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2477118903550856869}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52ef4541bfb35654391ddfce465c814c, type: 3}
+  m_Script: {fileID: 11500000, guid: 380846cf35a63af46b855e5ab61a1e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

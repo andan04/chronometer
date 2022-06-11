@@ -23,7 +23,7 @@ public class NoteScript : MonoBehaviour
     }
     IEnumerator DestroyThis()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(10);
         Destroy(gameObject);
     }
 }
